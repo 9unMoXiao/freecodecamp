@@ -23,11 +23,12 @@
           <input id="number" type="number" min="1" max="100" placeholder="Enter your number" required/>
         </div>
         <div class="form-group"> 
-          <select id="dropdown" name="role required">
-            <option disabled selected value > Select Current Role <option>
+          <p> Which option best describes your current role? </p>
+          <select class="form-control" id="dropdown" name="role" required>
+            <option disabled selected value > Select Current Role </option>
             <option value="student"> Student </option>
-            <option value="employed"> Employed <option>
-        </select>
+            <option value="employed"> Employed </option>
+          </select>
         </div>
         <div class="form-group">
           <p> Would you recommend freeCodeCamp to a friend?</p>
@@ -46,7 +47,7 @@
         </div>
         <div class="form-group">
           <p> What is your favorite featuure of freeCodeCamp? </p>
-          <select>
+          <select class="form-control" id="most-like" name="mostLike" required>
             <option disabled selected value> Select an option </option>
             <option value="challenges"> Challenges </option>
             <option value="projects"> Projects </option>
