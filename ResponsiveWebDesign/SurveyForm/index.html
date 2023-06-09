@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title"> 9unMoXiao Survey  Form </h1>
+        <p id="description"> Thank you for taking the time to take my survey!</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name" > Name </label>
+          <input id="name" type="text" placeholder="Enter your name" required/>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="name" > Email </label>
+          <input id="email" type="email" placeholder="Enter your email" required/>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number" > Number </label>
+          <input id="number" type="number" min="1" max="100" placeholder="Enter your number" required/>
+        </div>
+        <div class="form-group"> 
+          <p> Which option best describes your current role? </p>
+          <select class="form-control" id="dropdown" name="role" required>
+            <option disabled selected value > Select Current Role </option>
+            <option value="student"> Student </option>
+            <option value="employed"> Employed </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p> Would you recommend freeCodeCamp to a friend?</p>
+          <label>
+            <input class="input-radio" name="recommendation" type="radio" value="definitely" checked>
+            Definitely
+          </label>
+          <label>
+            <input class="input-radio" name="recommendation" type="radio" value="maybe" checked>
+            Maybe
+          </label>
+          <label>
+            <input class="input-radio" name="recommendation" type="radio" value="not-sure" checked>
+            Not Sure
+          </label>
+        </div>
+        <div class="form-group">
+          <p> What is your favorite featuure of freeCodeCamp? </p>
+          <select class="form-control" id="most-like" name="mostLike" required>
+            <option disabled selected value> Select an option </option>
+            <option value="challenges"> Challenges </option>
+            <option value="projects"> Projects </option>
+            <option value="community"> Community </option>
+            <option value="openSource"> Open Source </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p> What is your favorite feature of freeCodeCamp? </p>
+          <label>
+            <input class="input-checkbox" name="prefer" type="checkbox" value="front-end-projects">
+            Front End Projects
+          </label>
+          <label>
+            <input class="input-checkbox" name="prefer" type="checkbox" value="back-end-projects">
+            Back End Projects
+          </label>
+          <label>
+            <input class="input-checkbox" name="prefer" type="checkbox" value="data-visualization">
+            Data Visualization
+          </label>
+        </div>
+        <div class="form-group">
+          <p> Any comments or suggestions? </p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..." ></textarea>
+        </div>
+        <div class="form-group">
+          <button class="submit-button" id="submit" type="submit"> Submit </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
