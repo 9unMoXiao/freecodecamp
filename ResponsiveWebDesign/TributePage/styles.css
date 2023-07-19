@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    font-family: "Helvetica Neue";
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1rem auto;
+}
+
+main {
+
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#img-div {
+    padding: 1rem;
+    margin: 0;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+}
+
+h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tribute-info {
+    padding: 1rem;
+    margin: 0;
+}
+
+#imgcaption {
+    margin: 0;
+}
